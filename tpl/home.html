@@ -90,7 +90,7 @@ body {
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="https://github.com/gianarb/">Repo Cntrl</a></li>
             <li role="presentation"><a href="#">Car Cntrl</a></li>
-            <li role="presentation"><a href="https://titter.com/gianarb">@GiaArb</a></li>
+            <li role="presentation"><a href="https://twitter.com/gianarb">@GiaArb</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">Iot 2015</h3>
@@ -106,6 +106,7 @@ body {
       <button id="giu">GIU</button>
       <button id="right">DESTRA</button>
       <button id="left">SINISTRA</button>
+      <button id="stop">STOP</button>
 
       <footer class="footer">
         <p>© Corley SRL</p>
@@ -116,7 +117,6 @@ body {
     <script>
       var buttons = document.getElementsByTagName("button");
       for (var ii = 0; ii < buttons.length; ii++) {
-        var c = buttons[ii].id;
         buttons[ii].onclick = function su() {
             $.ajax({
                 type: "POST",
@@ -124,7 +124,7 @@ body {
                 success: function(r) {
                   console.log(r);
                 },
-                data: c
+                data: this.id
             });
         }
       }
