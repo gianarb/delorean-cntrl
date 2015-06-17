@@ -1,11 +1,17 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     /* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.btn-lg {
+ padding:25px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -86,32 +92,39 @@ body {
   <body>
     <div class="container">
       <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="https://github.com/gianarb/">Repo Cntrl</a></li>
-            <li role="presentation"><a href="#">Car Cntrl</a></li>
-            <li role="presentation"><a href="https://twitter.com/gianarb">@GiaArb</a></li>
-          </ul>
-        </nav>
         <h3 class="text-muted">Iot 2015</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>Raspberry e controllo real-time</h1>
-        <p class="lead"></p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
+      <div style="padding:20px">
+          <div class="row text-center">
+              <div class="col-xs-12">
+                  <button id="su" class="btn btn-lg btn-info"><i class="fa fa-chevron-up"></i></button>
+              </div>
+          </div>
+          <div class="row text-center" style="margin-top:10px;margin-bottom:10px;">
+              <div class="col-xs-4">
+                  <button id="left" class="btn btn-lg btn-info"><i class="fa fa-chevron-left"></i></button>
+              </div>
+              <div class="col-xs-4">
+                  <button id="stop" class="btn btn-lg btn-danger"><i class="fa fa-stop"></i></button>
+              </div>
+              <div class="col-xs-4">
+                  <button id="right" class="btn btn-lg btn-info"><i class="fa fa-chevron-right"></i></button>
+              </div>
+          </div>
+          <div class="row text-center">
+              <div class="col-xs-12">
+                  <button id="giu" class="btn btn-lg btn-info"><i class="fa fa-chevron-down"></i></button>
+              </div>
+          </div>
 
-      <button id="su">SU</button>
-      <button id="giu">GIU</button>
-      <button id="right">DESTRA</button>
-      <button id="left">SINISTRA</button>
-      <button id="stop">STOP</button>
+      <div>
 
-      <footer class="footer">
-        <p>© Corley SRL</p>
-      </footer>
-
+      <!--<button id="su">SU</button>-->
+      <!--<button id="giu">GIU</button>-->
+      <!--<button id="right">DESTRA</button>-->
+      <!--<button id="left">SINISTRA</button>-->
+      <!--<button id="stop">STOP</button>-->
     </div>
 
     <script>
